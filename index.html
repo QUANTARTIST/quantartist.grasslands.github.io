@@ -1,0 +1,95 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Life Forms of the Grasslands</title>
+  <meta name="description" content="MICA Contexts of Information Visualizaion | HW3">
+  <meta name="author" content="Lucy J. Nicholls">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container" class="container">
+    <header>
+      <h1>EXPLORE Life Forms of the Savanna Grassland Ecosystems</h1><br>
+      <p>Use your mouse to explore the relationships between different plant and animal life forms found in the Savanna Grassland ecosystem.
+        Click on "Life Form Species" to group life forms into their respective families. Click on "Expand Network Relationships"
+        to see how species are connected. Connecting nodes may occur for many reasons; species are part of the same family,
+        species prey on one another or depend on eachother within an ecosystem for survival. Mouse over the colored nodes
+        to view the names of the different species in English. Each species family is represented by a color.<br><br>
+        <span id=em2>Note that, in this instance, plants have not been grouped in sub-species. Species reflected can be found in different
+          parts of the world.<br><br>
+       </span>
+      </p><br>
+    </header>
+    <div id="song_selection" class="control">
+      <h3 id="life">Life Forms</h3>
+    </div>
+    <div id="controls">
+      <div id="layouts" class="control">
+        <h4 id="view">Views</h4><br>
+        <a id="radial">Life Form Species</a>
+        <a id="force" class="active">Expand Network Relationships</a><br>
+      </div>
+      <div id="main" role="main">
+        <div id="vis"></div>
+      </div>
+      <footer>
+        <p><span id="references"><span id="bold">References:</span><br><span id="em">http://www.blueplanetbiomes.org/grasslands_plant_page.html<br>
+http://www.savanna.org.au/all/mammals.html<br>http://thegreatsavanna.weebly.com/savanna-plants.html<br><span id="red">NOTE: This is a prototype visualization of the relationships between species. While species and some relationships have been reasonably researched, other relationships between nodes have beeen assumed for the purposes of building this demo prototype.</span></span><br>          "Grassland Biome" | Contexts of Information Visualization prototype | 2017. Some additional research has been undertaken
+          to support the visualization.<br/>By Lucy J. Nicholls | MICA MPS InfoVis 2017</p>
+        </span>
+
+      </footer>
+    </div>
+    <!--! end of #container -->
+
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+    <script>
+      window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')
+    </script>
+
+
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="js/libs/coffee-script.js"></script>
+    <script src="js/libs/d3.v2.js"></script>
+    <script src="js/Tooltip.js"></script>
+    <script type="text/coffeescript" src="coffee/vis.coffee"></script>
+
+    <script>
+      // Change UA-XXXXX-X to be your site's ID
+      window._gaq = [['_setAccount', 'UAXXXXXXXX1'], ['_trackPageview'], ['_trackPageLoadTime']];
+      Modernizr.load({
+        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+      });
+    </script>
+
+
+    <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+
+</html>

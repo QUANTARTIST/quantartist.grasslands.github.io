@@ -1,0 +1,8 @@
+h1. MICA | Visualizing Life Forms in the Grasslands
+
+<strong>This visualization can be accessed here:</strong> <br><br>
+https://quantartist.github.io/quantartist.networks.github.io/  <br><br>
+This visualization was completed for MICA’s Contexts of Information Visualization course, assignment 3. Students were asked to visualize the relationships between different grassland life forms. The audience for this visualization is intended to be high school students in Kenya. They know the grasslands well, but do not speak English as well as they would like. This network diagram is intended to show them familiar things and teach some new vocabulary words, such as "ecosystem" and "grassland." This visualization represents my third attempt at using the D3.js library. 
+<br>
+The framework for this visualization has been adapted from Jim Vallandingham’s interactive song visualization work which can be viewed here: <br><br>
+http://flowingdata.com/2012/08/02/how-to-make-an-interactive-network-visualization/<br><br>
